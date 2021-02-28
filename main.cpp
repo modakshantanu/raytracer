@@ -5,7 +5,7 @@
 
 #include "pico/stdlib.h"
 #include "hardware/spi.h"
-#include ""
+#include "display.h"
 
 #include <cstdlib>
 #include <math.h>
@@ -18,12 +18,6 @@ uint8_t frame[160][256];
 int height = 160, width = 128;
 
 
-
-// float clamp(float val, float min, float max) {
-//     if (val < min) return min;
-//     if (val > max) return max;
-//     return val;
-// }
 
 void render() {
 
